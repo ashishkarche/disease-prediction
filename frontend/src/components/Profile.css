@@ -1,0 +1,107 @@
+/* Profile Styling */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Limit width for large screens */
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-header h2 {
+    color: #007bff;
+    margin-top: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .profile-details {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;  /* Limit width for larger screens */
+  }
+  
+  .profile-actions button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;  /* Full width for smaller screens */
+  }
+  
+  .profile-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 576px) {
+    .profile-header h2 {
+      font-size: 1.5rem;  /* Adjust font size on small screens */
+    }
+  
+    .profile-details p {
+      font-size: 1rem;  /* Adjust font size for better readability on small devices */
+    }
+  
+    .profile-actions button {
+      width: 100%;
+      padding: 12px 20px; /* Adjust button padding */
+    }
+  }
+  
+  /* Tablet Responsiveness */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .profile-header h2 {
+      font-size: 1.6rem;
+    }
+  
+    .profile-details p {
+      font-size: 1.1rem;
+    }
+  
+    .profile-actions button {
+      padding: 12px 30px;
+    }
+  }
+  
+  /* Large Screen/PC Responsiveness */
+  @media (min-width: 769px) {
+    .profile-container {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  
+    .profile-header {
+      margin-bottom: 0;
+    }
+  
+    .profile-details {
+      text-align: left;
+      font-size: 1.2rem;
+      margin-left: 20px;
+      width: 50%;  /* Ensure it doesn't take up too much space */
+    }
+  
+    .profile-actions {
+      width: 30%;  /* Give more space for the button */
+      text-align: center;
+    }
+  
+    .profile-actions button {
+      width: auto;
+      padding: 12px 30px; /* Increase button size for larger screens */
+    }
+  }
+  

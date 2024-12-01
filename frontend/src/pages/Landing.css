@@ -1,0 +1,72 @@
+/* CSS for responsive 3D background */
+.landing-container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .form-section {
+    flex: 1;
+    z-index: 1;
+    padding: 2rem;
+  }
+  
+  .landing-content {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+  }
+  
+  @media (max-width: 576px) {
+    .canvas-container {
+      height: 80%; /* Reduce canvas size on small devices */
+    }
+  
+    .landing-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .landing-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    .canvas-container {
+      height: 90%; /* Adjust canvas size for tablets */
+    }
+  
+    .landing-content h1 {
+      font-size: 3rem;
+    }
+  
+    .landing-content p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .canvas-container {
+      height: 100%; /* Full canvas size on larger screens */
+    }
+  
+    .landing-content h1 {
+      font-size: 4rem;
+    }
+  
+    .landing-content p {
+      font-size: 1.2rem;
+    }
+  }
+  

@@ -1,0 +1,131 @@
+/* About Section Styling */
+.about-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  color: #007bff;
+  font-size: 2.5rem; /* Font size for larger screens */
+  margin-bottom: 20px;
+}
+
+.about-section h4 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.about-section ul li {
+  margin-bottom: 10px;
+}
+
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem; /* Adjust font size for mobile */
+    text-align: center;
+  }
+
+  .about-section h4 {
+    font-size: 1.3rem; /* Adjust heading font size */
+  }
+
+  .about-section p {
+    font-size: 1rem; /* Smaller text size for readability on small screens */
+  }
+
+  .about-section ul {
+    font-size: 1rem;
+    text-align: left; /* Keep the list aligned left for better readability */
+  }
+
+  .about-section img {
+    max-width: 80%; /* Make image smaller for mobile */
+    margin-top: 20px;
+  }
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 577px) and (max-width: 768px) {
+  .about-section {
+    padding: 50px 0;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-section h4 {
+    font-size: 1.4rem;
+  }
+
+  .about-section p {
+    font-size: 1.1rem;
+  }
+
+  .about-section ul {
+    font-size: 1.1rem;
+  }
+
+  .about-section img {
+    max-width: 90%; /* Slightly larger image for tablets */
+    margin-top: 20px;
+  }
+}
+
+/* Desktop/PC Responsiveness */
+@media (min-width: 769px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-section h4 {
+    font-size: 1.5rem;
+  }
+
+  .about-section p {
+    font-size: 1.2rem;
+  }
+
+  .about-section ul {
+    font-size: 1.2rem;
+  }
+
+  .about-section img {
+    max-width: 100%; /* Full-width image on larger screens */
+    margin-top: 20px;
+  }
+}
