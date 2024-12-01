@@ -35,7 +35,7 @@ router.post("/predict", authenticateToken, async (req, res) => {
     // Send the data to the FastAPI server for prediction
     try {
         const inputData = { age, sex, chestPain, cholesterol, bloodPressure, bloodSugar, electrocardiographic, maxHeartRate, exerciseAngina, oldPeak, stSlope };
-        const response = await axios.post("https://127.0.0.1:8000/predict", inputData);
+        const response = await axios.post("https://unpleasant-cornela-ashishprojects-89ff1a78.koyeb.app/predict", inputData);
         const prediction = response.data.prediction;
 
         // Create the Word document for the report
