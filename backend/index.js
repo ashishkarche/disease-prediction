@@ -9,7 +9,7 @@ const path = require("path");
 dotenv.config();
 
 const authRoutes = require("./routes/auth");
-const predictRoutes = require("./routes/predicts");
+const predictRoutes = require("./routes/predict");
 const userRoutes = require("./routes/user");
 const app = express();
 
@@ -19,7 +19,7 @@ app.use(bodyParser.json()); // Parse JSON payloads
 
 // Routes
 app.use("/auth", authRoutes); // Authentication routes
-app.use("/predicts", predictRoutes); // Prediction routes
+app.use("/predict", predictRoutes); // Prediction routes
 app.use("/user",userRoutes );
 
 // 404 route handler - Catch all other routes

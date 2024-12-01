@@ -65,7 +65,7 @@ const Prediction = () => {
             }
 
             // Send POST request with the token in headers
-            const res = await axios.post("https://disease-prediction-topaz.vercel.app/predicts/predict", data, {
+            const res = await axios.post("/predict/predict", data, {
                 headers: {
                     Authorization: `Bearer ${token}`, // Attach the JWT token to the request
                 },
