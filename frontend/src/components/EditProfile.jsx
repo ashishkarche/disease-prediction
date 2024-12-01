@@ -18,7 +18,7 @@ const EditProfile = () => {
     }
 
     // Fetch user data from the backend API
-    fetch('http://localhost:5000/user/user', {
+    fetch('http://disease-prediction-topaz.vercel.app/user/user', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`, // Send token in Authorization header
@@ -61,7 +61,7 @@ const EditProfile = () => {
     }
 
     // Send updated data to the backend
-    fetch('http://localhost:5000/user/update', {
+    fetch('http://disease-prediction-topaz.vercel.app/user/update', {
       method: 'PUT',
       headers: {
         'Authorization': `Bearer ${token}`,

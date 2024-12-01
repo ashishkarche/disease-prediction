@@ -17,7 +17,7 @@ const Profile = () => {
     }
 
     // Fetch user data from the backend API
-    fetch('http://localhost:5000/user/user', {
+    fetch('http://disease-prediction-topaz.vercel.app/user/user', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`, // Send token in Authorization header

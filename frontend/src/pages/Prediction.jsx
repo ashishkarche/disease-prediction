@@ -91,7 +91,7 @@ const Prediction = () => {
         const token = localStorage.getItem("token");
     
         axios({
-            url: `http://localhost:5000/predict/download-report/${reportId}`,
+            url: `http://disease-prediction-topaz.vercel.app/predict/download-report/${reportId}`,
             method: 'GET',
             headers: { Authorization: `Bearer ${token}` },
             responseType: 'blob', // Important: This tells axios to handle the response as a file
