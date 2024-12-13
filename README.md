@@ -1,4 +1,4 @@
-# HealthPredict Backend
+# Disease Prediction Site
 
 HealthPredict is an advanced AI-powered health prediction system that evaluates potential health risks based on user-provided symptoms, medical history, and lifestyle factors. The backend of the application is built with Node.js, Express, and MySQL, providing secure authentication, prediction services, and report generation.
 
