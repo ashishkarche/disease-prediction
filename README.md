@@ -22,3 +22,7 @@ Follow the steps below to set up the backend locally:
 ```bash
 git clone https://github.com/ashishkarche/disease-predict.git
 cd disease-predict
+```
+
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
