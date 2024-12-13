@@ -21,4 +21,4 @@ Follow the steps below to set up the backend locally:
 ### Clone the repository
 ```bash
 git clone https://github.com/ashishkarche/disease-predict.git
-cd healthpredict-backend
+cd disease-predict
